@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      /* outline: 1px dashed black; */
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      max-width: 100vw;
+    }
+
+    #bg-div {
+      background-image: url("./images/bg-hero-desktop.svg");
+      /* background-color: red; */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="website-container">
+    <div id="bg-div">
+      <div id="hero" class="container mx-auto">
+        <nav class="flex items-center justify-between py-8">
+          <div class="logo w-[150px]">
+            <img src="./images/logo.svg" alt="huddle_logo">
+          </div>
+          <Button class="bg-white shadow-md shadow-[#808080] w-[180px] h-[40px] border-1 rounded-full font-bold text-sm capitalize cursor-pointer hover:bg-pink-400 duration-300 ease-in">Try it
+            Free</Button>
+        </nav>
+        <div id="title" class="flex items-center gap-12 pb-10 pt-4">
+          <div id="title-text" class="flex flex-col items-start w-2/5 gap-4">
+            <h1 class="font-bold text-[2.2rem] capitalize">Build the community <br> your fans will love</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia vitae maxime, voluptates animi
+              dolores eveniet corporis sint esse explicabo, vel sed, odio et. Nesciunt nemo distinctio quos doloribus.
+              Molestiae?</p>
+            <button class="bg-pink-400 py-3 px-16 rounded-full font-bold text-white text-sm capitalize cursor-wait">Get started for free</button>
+          </div>
+          <div id="title-img" class="w-3/5">
+            <img src="./images/illustration-mockups.svg" alt="mockups">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
